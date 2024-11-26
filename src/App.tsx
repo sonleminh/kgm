@@ -12,11 +12,11 @@ import QR from './pages/QR';
 
 const App = () => {
   return (
-    <Router basename='/checkin'>
+    <Router>
       <Routes>
         <Route path='/' element={<Navigate to={'/checkin'} replace />} />
-        <Route path='/checkin' element={<Home />} />
-        <Route path='/qr' element={<QR />} />
+        <Route path='checkin' element={<Home />} />
+        <Route path='qr' element={<QR />} />
       </Routes>
     </Router>
   );
